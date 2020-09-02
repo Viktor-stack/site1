@@ -1,0 +1,64 @@
+@import "vars";
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.footer {
+
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container__fluid {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 0 auto;
+  min-width: 1440px;
+}
+
+.container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.footer_copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $border_color;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
